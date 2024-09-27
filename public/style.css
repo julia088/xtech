@@ -1,6 +1,6 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,10 +8,8 @@ body{
     background: rgb(16,34,121);
     background: linear-gradient(90deg, rgba(16,34,121,1) 20%, rgba(17,49,103,1) 49%, rgba(16,34,121,1) 80%);
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
-
-
 
 .navigation a{
     position: relative;
@@ -39,7 +37,26 @@ body{
     transform: scaleX(1);
 }
 
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 1250px;
+    margin-top: -30px;
+    transition: .5s;
+}
 
+.navigation .btnLogin-popup:hover {
+    background: white;
+    color: #162938;
+}
 
 .interface{
     max-width: 1250px;
@@ -63,13 +80,6 @@ button:hover, form .btn-enviar input{
 
 header{
     padding: 40px 4%;
-
-}
-
-#header{
-    background-color: black;
-    opacity: 50.0;
-
 }
 
 header .interface{
@@ -99,16 +109,9 @@ header nav ul li{
     padding: 0 40px;
 }
 
-h2.titulo span{
-    color:#ffffff;
-}
-
-
-
 section.catalogo{
     padding:40px 4%;
 }
-
 
 section.catalogo .flex{
     gap:60px;
@@ -121,18 +124,9 @@ section.catalogo .flex{
     border: 2px solid #ffffff;
     margin: 15px;
     transition: .2s;
+    text-decoration: underline;
     text-decoration-color: #ffffff;
 }
-
-a {
-    text-decoration: none !important;
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: none !important; 
-}
-
 
 .catalogo .catalogo-box:hover{
     transform: scale(1.06);
@@ -148,7 +142,7 @@ a:hover {
     margin: 15px 0;
 }
 
-.catalogo .btnLogin-popup {
+.catalogo .btnInscreva {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -163,47 +157,302 @@ a:hover {
     transition: .5s;
 }
 
-section.formulario{
-    padding: 80px 4%;
-}
-
-form{
-    max-width: 500px;
-    margin: 0 auto;
+.home-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input, form textarea{
-    width: 100%;
-    background-color:#00218d;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color:white;
-    font-size: 18px;
-}
-
-form textarea{
-    resize: none;
-    max-width:700px;
-    height: 200px;
-}
-
-form .btn-enviar{
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #fff;
+    padding: 50px;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.027);
+    border-radius: 10px;
 }
 
-form .btn-enviar input{
-    width: 120px;
-    background-color: white;
-    color: white;
-    font-weight: 700;
+.home-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.home-container .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #fff;
+    background: rgb(11, 49, 155);
+    border: none;
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.home-container .btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+footer{
+    padding:60px 4%;
+    box-shadow: 0 0 40px 10px  rgb(14, 29, 104);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    color: white;
+}
+
+.borda{
+    border-top: 2px solid ;
+}
+
+footer .line-footer p i{
+    color:  rgb(14, 29, 104);
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color:  rgb(14, 29, 104);
+}
+
+.btn-social button{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border-color: white;
+    background: transparent;
+    font-size:22px;
+    cursor: pointer;
+    margin: 0 5px;
     transition: .2s;
+}
+
+.card{
+    width: 400px;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 0 8px black;
+    color: white;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.card i,
+.btn-social i,
+.line-footer i {
+    color: white;
+}
+
+.footertext {
+    margin-left: 100px;
+    font-size: large;
+    color: white;
+}
+
+.borda{
+    border-top: 2px solid ;
+}
+
+footer .line-footer p i{
+    color:  rgb(14, 29, 104);
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color:  rgb(14, 29, 104);
+}
+
+.btn-social button{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border-color: white;
+    background: transparent;
+    font-size:22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(134, 134, 134);
+    background-color: rgb(184, 181, 181);
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color:rgba(201, 201, 201, 0.856);
+}
+
+
+#searchInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+
+.search label{
+    height: 20px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 0 8px black;
+    color: white;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.card h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.card i,
+.btn-social i,
+.line-footer i {
+    color: white;
+}
+
+.footertext {
+    margin-left: 100px;
+    font-size: large;
+    color: white;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px black;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: rgb(168, 181, 245);
+}
+
+.card-list .card-item .card-link:active{
+    cursor:grabbing;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: rgb(168, 181, 245);
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: rgb(168, 181, 245);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid rgb(168, 181, 245);
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: white;
+    background: rgb(168, 181, 245);
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: rgb(168, 181, 245);
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: rgb(168, 181, 245);
+    margin: -35px;
+}
+
+@media screen and (max-width: 768px){
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
 }
